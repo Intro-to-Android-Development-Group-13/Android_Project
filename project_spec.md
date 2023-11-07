@@ -1,4 +1,4 @@
-# **APP_NAME_HERE**
+# **PrepPilot**
 
 ## Table of Contents
 
@@ -11,18 +11,20 @@
 
 ### Description 
 
-**Description of your app**
+**PrepPilot is a mobile application that allows users to enter in a set of ingredients of their choosing. 
+The application then takes in their choices and provides a list of delicious recipes that incorporate the ingredients
+the user wanted.**
 
 ### App Evaluation
 
 <!-- Evaluation of your app across the following attributes -->
 
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Food recommendation app
+- **Mobile:** app is read only and allows users to scroll through recipe ideas
+- **Story:** Allows users to come up with newly discovered recipes that utilize the ingredients they desire
+- **Market:** Target Market are food enthusiasts who want to develop new ideas to make their own delicious meals.
+- **Habit:** We want users to develop the habit of making their own meals be it breakfast, lunch or dinner.
+- **Scope:** Our app is catered to all adults of all backgrounds. 
 
 ## Product Spec
 
@@ -74,7 +76,7 @@ For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
 ## License
 
-Copyright **yyyy** **your name**
+Copyright **2023** **Alfonso Vieyra, Tyler Thiem, Siyuan Zhai, Donovan Chen, Mina Yoon**
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
