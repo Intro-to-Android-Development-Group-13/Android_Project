@@ -20,8 +20,8 @@ If we had to describe this milestone in three (3) emojis, they would be: **emoji
 
 The following REQUIRED features are completed:
 
-- [ ] Creation of GitHub Organization and Group Project Repo
-- [ ] Updated Course Portal group info with Group Name and App Description
+- [x] Creation of GitHub Organization and Group Project Repo
+- [x] Updated Course Portal group info with Group Name and App Description
 
 The following REQUIRED files are included:
 

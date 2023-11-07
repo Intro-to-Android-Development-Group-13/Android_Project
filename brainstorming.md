@@ -3,15 +3,15 @@ Mobile App Dev - App Brainstorming Example
 
 ## Favorite Existing Apps - List
 1. Instagram
-1. Wag
-1. Rover
-1. Coinbase
-1. Waze
-1. Notes
-1. Messages
-1. Facebook Messenger
-1. Craigslist Client
-1. Yelp
+2. Wag
+3. Rover
+4. Coinbase
+5. Waze
+6. Notes
+7. Messages
+8. Facebook Messenger
+9. Craigslist Client
+10. Yelp
 
 ## Favorite Existing Apps - Categorize and Evaluate
 ### Instagram
@@ -19,7 +19,7 @@ Mobile App Dev - App Brainstorming Example
    - **Mobile:** Website is view only, uses camera, mobile first experience.
    - **Story:** Allows users to share their lives in pictures and enhance their content with filters
    - **Market:** Anyone that takes pictures could enjoy this app. Ability to follow and hashtag based on interests and categories allows users with unique interests to engage with relevant content.
-   - **Habit:** Users can post throughout the day many times. Features like "Stories" encourage more candid posting as well. Users can explore endless pictures in any category imaginable whenever they want. Very habbit forming!
+   - **Habit:** Users can post throughout the day many times. Features like "Stories" encourage more candid posting as well. Users can explore endless pictures in any category imaginable whenever they want. Very habit forming!
    - **Scope:** Instagram started out extremely narrow focused, just posting pics and viewing feeds. Has expanded to a somewhat larger scope including "Instagram Stories" (a la SnapChat) and messenger features. 
 ### Rover
    - **Category:**...
@@ -27,10 +27,10 @@ Mobile App Dev - App Brainstorming Example
 ## New App Ideas - List
 1. Student Behavior Tracker
    - Allows teachers, students and parents to stay up to date with student behavior in real time. Teachers can acknowledge positive student behavior when it happens, students can receive instant positive reinforcement and parents can be more tuned in to how their child is doing at school.
-3. Tutor Finder
-4. Used Text Book Exchange
-5. 
-6. ...   
+2. Tutor Finder
+3. Used Text Book Exchange
+4. budget app
+5. recipe app
 
 ## Top 3 New App Ideas
 1. Student Behavior Tracker
@@ -52,5 +52,5 @@ Some ideas
 2. Open API where we can feed it info and process it. 
 3. Marvel API where you display all the different images of the marvel characters. 
 4. Food API where users could enter some sort of ingredient and see what they could make with that. Could refer you to different ingredients as well. 
-5. Stripe API that can take your transaction data and agregates your spendings or highlights the things that you spend and lets you know your budgets. Recycler view for list of transactions. 
+5. Stripe API that can take your transaction data and aggregates your spending or highlights the things that you spend and lets you know your budgets. Recycler view for list of transactions. 
 6. A travel app that tells you where you should travel based on what you want and your requirements. 
