@@ -49,9 +49,9 @@ Mobile App Dev - App Brainstorming Example
 12. Space app - Displays different things in space that the user can interact with to learn more. 
 
 ## Top 3 New App Ideas
-1. Student Behavior Tracker
-2. Tutor Finder
-3. Used Book Exchange
+1. Recipe App
+2. Budget App
+3. Travel App
 
 ## New App Ideas - Evaluate and Categorize
 1. Student Behavior Tracker
