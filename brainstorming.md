@@ -10,7 +10,7 @@ Mobile App Dev - App Brainstorming Example
 6. Chik-Fil-A
 7. Prime Video
 8. Facebook Messenger
-9. gmail
+9. Gmail
 10. LinkedIn
 
 ## Favorite Existing Apps - Categorize and Evaluate
@@ -23,11 +23,16 @@ Mobile App Dev - App Brainstorming Example
    - **Scope:** Instagram started out extremely narrow focused, just posting pics and viewing feeds. Has expanded to a somewhat larger scope including "Instagram Stories" (a la SnapChat) and messenger features. 
 ### Netflix
    - **Category:** Streaming & Entertainment 
-   - **Mobile:** Website allows users to watch their favorite tv shows and movies as well as other shows that are exclusively on Netflix. 
+   - **Story:** Website allows users to watch their favorite tv shows and movies as well as other shows that are exclusively on Netflix. 
    - **Market:** Many families and people in general who love to watch shows. The app customizes what is recommended for the user to watch based on their interests. 
    - **Habit:** Users can watch different shows from different places if they share an account. The user can also keep track of where they last were in a show. 
-   - **Scope:** Netflix started out with less varieties of shows compared to now and has since grown a large following. They have also been able to come out with their own shows as well. 
-
+   - **Scope:** Netflix started out with less varieties of shows compared to now and has since grown a large following. They have also been able to come out with their own shows as well.
+### Gmail
+   - **Category:** Email
+   - **Story:** Website allows users to send and receive emails from other people as well as receive updates and promotions from places. 
+   - **Market:** Mainly adults and students who need a way to communicate with different people for certain things.  
+   - **Habit:** Users can check their emails from anywhere and anyplace as long as they are connected to the internet. 
+   - **Scope:** Making an email system is very straight forwards but implementing other features such as the chat and meetings can be challenging. 
 ## New App Ideas - List
 1. Student Behavior Tracker
    - Allows teachers, students and parents to stay up to date with student behavior in real time. Teachers can acknowledge positive student behavior when it happens, students can receive instant positive reinforcement and parents can be more tuned in to how their child is doing at school.
