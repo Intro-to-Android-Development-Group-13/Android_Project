@@ -54,11 +54,30 @@ Mobile App Dev - App Brainstorming Example
 3. Travel App
 
 ## New App Ideas - Evaluate and Categorize
-1. Student Behavior Tracker
-   - **Description**: Allows teachers, students and parents to stay up to date with student behavior in real time. Teachers can acknowledge positive student behavior when it happens, students can receive instant positive reinforcement and parents can be more tuned in to how their child is doing at school.
-   - **Category:** Social Networking
-   - **Mobile:** Mobile is essential for the instant logging of student behavior. Students use the app to purchase goods from the student store and other rewards. The camera is used to share images with parents.
-   - **Story:** Creates a team between student, parent and teacher. Allows good behavior to not go unnoticed and for students to get rewards and positive reinforcement from teachers, parents and peers
-   - **Market:** Any school district or individual classroom teacher of any grade could utilize this app. District wide licensing and custom features could be used for monetization. 
-   - **Habit:** Teachers are using this constantly throughout the school day. Students are using the app daily to check their performance and cash in on rewards.
-   - **Scope:** V1 would allow teachers to access a roster of students and input behavior logs. Could actually be tested by a real teacher with a class of students. V2 would incorporate a student facing version for students to see their performance. V3 would add a way for students to earn and obtain rewards for goals met. V4 would incorporate a parent facing version.
+1. Recipe App 
+   - **Description**: Allows users to see what recipes they can cook with what they have. 
+   - **Category:** Cooking and Eating 
+   - **Mobile:** Mobile is essential for allowing users to view what recipes they can make in real time without having to leave the kitchen. 
+   - **Story:** Takes input from the user as to what they can make with what they have and displays the top recipes at the click of a button. Many people would like a feature like this where they can see what they can make at the click of button. 
+   - **Market:** Anybody that likes to cook or make new food.  
+   - **Habit:** Many people at home can use this daily since a lot of people have leftover ingredients and may not know what they can make with them. 
+   - **Scope:** The app should allow people to put in several ingredients that they have in their kitchen. It should display the different recipes as well as some of the other ingredients that may be needed.
+2. Budget App
+   - **Description**: Allows users to track their spendings as well as how much they have in their bank account. They can also see how much they saved on certain items. 
+   - **Category:** Finance
+   - **Mobile:** Mobile is essential for allowing users to view how much they spent and saved since users can access their camera to take pictures of certain receipts. 
+   - **Story:** Takes input from the user as to what they have spent their money on. They can take pictures of their receipts and spendings as well. 
+   - **Market:** Most likely adults who are tracking their spendings.   
+   - **Habit:** Many adults can use this to see what they can save money on and how much they saved every day or week. 
+   - **Scope:** The app should allow people to put in several different spendings and savings. The app should also allow users to take pictures of their different spendings. The app should display the different categories for what they spent moeny on as well. 
+3. Travel App
+   - **Description**: Allows users to see where they can potentially travel based on their preferences for what they want.  
+   - **Category:** Travel 
+   - **Mobile:** Mobile is essential for allowing users to conveniently see where they may be able to travel. The app being mobile also makes it easier to access the user's location wherever they are. It also makes it easier to peronalize the search for the specific person. 
+   - **Story:** Allows the user to select what they prefer in a trip and filter out what they may not want.  
+   - **Market:** Anyone that is looking to go on vacation some time in the future.  
+   - **Habit:** Most people won't use this app too much, but there still will be a good amount of users a lot of the time. Most people only go on one or two trips per year, so certain seasons will have more people using the app than others. 
+   - **Scope:** The app should allow users to select from a selection menu several different choices as to what they value in a trip. Users have the choice of manually entering their location or letting the app detect their location. The app should then display potential places that the user can travel too. 
+   
+## Final Choice
+The Recipe app seems like the best app we can make. 
