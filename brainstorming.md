@@ -31,6 +31,9 @@ Mobile App Dev - App Brainstorming Example
 3. Used Text Book Exchange
 4. budget app
 5. recipe app
+6. Pet Adoption App - Connects potential pet adopters with animals in shelters looking for a home.
+7. ClimaWear - Display weather forecasts for the user's current location or a searched city and suggest clothing based on the weather using open API.
+8. Historical Events App - Presents daily historical events and trivia for that day.
 
 ## Top 3 New App Ideas
 1. Student Behavior Tracker
