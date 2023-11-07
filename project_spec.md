@@ -64,7 +64,7 @@ Required Feature
 ## Wireframes
 
 <!-- Add picture of your hand sketched wireframes in this section -->
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/Intro-to-Android-Development-Group-13/Android_Project/blob/main/group1.gif" width=550>
 
 ### [BONUS] Digital Wireframes & Mockups
 
