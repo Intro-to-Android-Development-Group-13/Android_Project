@@ -32,31 +32,34 @@ the user wanted.**
 
 Required Features:
 
-- **fill in here**
-- ...
+- Users can type in any ingredient they want
+- Upon submission, users will have a list of recipe ideas 
+- Users can select any recipe of their choice
+- The recipe's themselves will have all the instructions to make the meal
 
 Stretch Features:
 
-- **fill in here**
-- ...
+- Users can select a category of food
+- Information displays additional nutritional information
 
 ### 2. Chosen API(s)
 
-- **list first API endpoint here**
-  - **list associated required feature here**
-  - ...
-- ...
+- Spoonacular API:
+  - Recipes 
+  - Nutritional Information
 
 ### 3. User Interaction
 
 Required Feature
 
-- **list first user action here**
-  - => **list result of user action here**
-  - ...
-- **list second user action here**
-  - => **list result of user action here**
-  - ...
+- **User Types in ingredients (or selects from a list)**
+  - => **Ingredients will be displayed upon each ingredient submission**
+
+- **User will choose between a list of recipes containing their desired ingredients**
+  - => **A list of recipes or food items**
+
+- **User will click on any of the options on the list**
+  - => **Will display recipe steps and additionaly nutritional info**
 
 ## Wireframes
 
