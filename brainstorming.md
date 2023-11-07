@@ -33,11 +33,15 @@ Mobile App Dev - App Brainstorming Example
    - Allows teachers, students and parents to stay up to date with student behavior in real time. Teachers can acknowledge positive student behavior when it happens, students can receive instant positive reinforcement and parents can be more tuned in to how their child is doing at school.
 2. Tutor Finder
 3. Used Text Book Exchange
-4. budget app
-5. recipe app
+4. Budget app - allows users to track their spendings.
+5. Recipe app - allows users to look for recipes with ingredients.
 6. Pet Adoption App - Connects potential pet adopters with animals in shelters looking for a home.
 7. ClimaWear - Display weather forecasts for the user's current location or a searched city and suggest clothing based on the weather using open API.
 8. Historical Events App - Presents daily historical events and trivia for that day.
+9. Travel app - lets users know where they should travel.
+10. Hero app - displays different Marvel heroes.
+11. Chat bot - allows users to interact with a chatbot and get answers. 
+12. Space app - Displays different things in space that the user can interact with to learn more. 
 
 ## Top 3 New App Ideas
 1. Student Behavior Tracker
@@ -53,11 +57,3 @@ Mobile App Dev - App Brainstorming Example
    - **Market:** Any school district or individual classroom teacher of any grade could utilize this app. District wide licensing and custom features could be used for monetization. 
    - **Habit:** Teachers are using this constantly throughout the school day. Students are using the app daily to check their performance and cash in on rewards.
    - **Scope:** V1 would allow teachers to access a roster of students and input behavior logs. Could actually be tested by a real teacher with a class of students. V2 would incorporate a student facing version for students to see their performance. V3 would add a way for students to earn and obtain rewards for goals met. V4 would incorporate a parent facing version.
-
-Some ideas
-1. NASA API that has image of planets and you can click on planets and it will give you a description. 
-2. Open API where we can feed it info and process it. 
-3. Marvel API where you display all the different images of the marvel characters. 
-4. Food API where users could enter some sort of ingredient and see what they could make with that. Could refer you to different ingredients as well. 
-5. Stripe API that can take your transaction data and aggregates your spending or highlights the things that you spend and lets you know your budgets. Recycler view for list of transactions. 
-6. A travel app that tells you where you should travel based on what you want and your requirements. 
