@@ -21,8 +21,12 @@ Mobile App Dev - App Brainstorming Example
    - **Market:** Anyone that takes pictures could enjoy this app. Ability to follow and hashtag based on interests and categories allows users with unique interests to engage with relevant content.
    - **Habit:** Users can post throughout the day many times. Features like "Stories" encourage more candid posting as well. Users can explore endless pictures in any category imaginable whenever they want. Very habit forming!
    - **Scope:** Instagram started out extremely narrow focused, just posting pics and viewing feeds. Has expanded to a somewhat larger scope including "Instagram Stories" (a la SnapChat) and messenger features. 
-### Rover
-   - **Category:**...
+### Netflix
+   - **Category:** Streaming & Entertainment 
+   - **Mobile:** Website allows users to watch their favorite tv shows and movies as well as other shows that are exclusively on Netflix. 
+   - **Market:** Many families and people in general who love to watch shows. The app customizes what is recommended for the user to watch based on their interests. 
+   - **Habit:** Users can watch different shows from different places if they share an account. The user can also keep track of where they last were in a show. 
+   - **Scope:** Netflix started out with less varieties of shows compared to now and has since grown a large following. They have also been able to come out with their own shows as well. 
 
 ## New App Ideas - List
 1. Student Behavior Tracker
