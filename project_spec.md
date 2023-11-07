@@ -3,9 +3,9 @@
 ## Table of Contents
 
 1. [App Overview](#App-Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-1. [Build Notes](#Build-Notes)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Build Notes](#Build-Notes)
 
 ## App Overview
 

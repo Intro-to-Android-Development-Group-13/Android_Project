@@ -3,15 +3,15 @@ Mobile App Dev - App Brainstorming Example
 
 ## Favorite Existing Apps - List
 1. Instagram
-2. Wag
-3. Rover
-4. Coinbase
-5. Waze
-6. Notes
-7. Messages
+2. Netflix
+3. DoorDash
+4. Instacart
+5. Uber
+6. Chik-Fil-A
+7. Prime Video
 8. Facebook Messenger
-9. Craigslist Client
-10. Yelp
+9. gmail
+10. LinkedIn
 
 ## Favorite Existing Apps - Categorize and Evaluate
 ### Instagram
