@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/olive"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="PrepPilot"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/ingredients"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:background="@color/gray"
+        android:hint="Write your ingredients..."
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Add"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toEndOf="@id/ingredients"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/ingredientsList"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredients" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipes_list"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsList"
+        app:layout_constraintStart_toStartOf="@id/ingredientsList"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Submit"
+        android:backgroundTint="@color/olive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipes_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
