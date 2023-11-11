@@ -2,12 +2,12 @@ package com.example.test_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import okhttp3.Headers
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.Response
 import android.util.Log
-import kotlinx.coroutines.*
+import com.codepath.asynchttpclient.AsyncHttpClient
+import com.codepath.asynchttpclient.RequestHeaders
+import com.codepath.asynchttpclient.RequestParams
+import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import okhttp3.Headers
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,33 +16,34 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         getRecipes()
-
     }
+
     private fun getRecipes() {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val client = OkHttpClient()
+        val client = AsyncHttpClient()
+        val params = RequestParams()
+        params.put("ingredients", "cinnamon")
+        params.put("number", "10")
 
-                val request = Request.Builder()
-                    .url("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=apples%2Cflour%2Csugar&number=5&ignorePantry=true&ranking=1")
-                    .get()
-                    .addHeader("X-RapidAPI-Key", "key")
-                    .addHeader("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
-                    .build()
+        val headers = RequestHeaders()
+        headers.put("X-RapidAPI-Key", "72e3afa377msh7ef35d064c63a73p1dc7b9jsn2241f09376c0")
+        headers.put("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
 
-                val response = client.newCall(request).execute()
+        client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch", headers, params, object : JsonHttpResponseHandler() {
+            override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON) {
+                Log.d("success", "$json")
 
-                withContext(Dispatchers.Main) {
-                    // Update UI or log response here
-                    Log.d("success", response.body?.string() ?: "No response")
-                }
-            } catch (e: Exception) {
-                withContext(Dispatchers.Main) {
-                    // Handle error, update UI
-                    Log.e("error", e.message ?: "Error occurred")
-                }
+                // Parse the JSON response to get the image URL
+                val imageUrl = json.jsonObject.getJSONArray("results").getJSONObject(0).getString("title")
+
+
+                // Now you can use this URL to load the image, e.g., using an image loading library like Glide or Picasso
             }
-        }
+
+            override fun onFailure(statusCode: Int, headers: Headers?, response: String, throwable: Throwable?) {
+                Log.e("API Error", "Failed to fetch data: $response")
+            }
+        })
+
     }
 
 }
