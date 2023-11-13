@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.content.Intent
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class RecipeInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,6 @@ class RecipeInfoActivity : AppCompatActivity() {
         ingredientsInfo.text = intent.getStringExtra("extendedIngredients")
 
         val backButton: Button = findViewById(R.id.infoBackBtn)
-
         backButton.setOnClickListener {
             val back = Intent(this@RecipeInfoActivity, ResultsActivity::class.java)
             startActivity(back)

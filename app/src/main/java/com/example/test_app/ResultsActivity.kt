@@ -92,13 +92,20 @@ class ResultsActivity : AppCompatActivity() {
                 var extIngredArray: String? = ""
                 for (i in 0 until (extIngredArrObj?.length() ?: 0)) {
                     val extIngredObj: JSONObject? = extIngredArrObj?.getJSONObject(i)
-                    extIngredArray += (i + 1).toString() + ") " + extIngredObj?.getString("original") + ".\n"
+                    extIngredArray += extIngredObj?.getString("original") + ".\n\n"
                 }
                 Log.d("success-extIngredArray", "$extIngredArray")
 
-                // carry ingredient and recipe info to next activity
-                val intent = Intent(this@ResultsActivity, RecipeInfoActivity::class.java)
-                intent.putExtra("instructions", instructions?.replace(".", ".\n"))
+                // carry ingredient and recipe info to next activity using intent
+                val intent = Intent(this@ResultsActivity,
+                    RecipeInfoActivity::class.java)
+
+                // process the instructions in the correct format
+                val instructionsString = (instructions?.replace(".", ".\n\n")
+                        )?.substringAfter("Instructions")
+
+                // place into intent
+                intent.putExtra("instructions", instructionsString)
                 intent.putExtra("extendedIngredients", extIngredArray)
                 startActivity(intent)
             }
