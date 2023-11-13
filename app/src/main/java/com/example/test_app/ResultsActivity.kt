@@ -34,8 +34,9 @@ class ResultsActivity : AppCompatActivity() {
          * activity_main.xml and instead focus your efforts on the recycler view in activity_results.xml
          * It will just be like the lab when creating the recylcer view (using glide) there.
          * NOTE: I added an imageview in the activity_results.xml for my own testing purposes. The
-         * code below shows how to transcribe an image with a tag. You can ignore it if you want to
-         * follow a different way.
+         * code below shows how to transcribe an image with a tag (the tag must be an id found in the
+         * recipesList since this is used to find the relevant recipe info based off that id).
+         * You can ignore it if you want to follow a different way.
          */
 
 
@@ -67,7 +68,8 @@ class ResultsActivity : AppCompatActivity() {
         headers.put("X-RapidAPI-Key", "72e3afa377msh7ef35d064c63a73p1dc7b9jsn2241f09376c0")
         headers.put("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
 
-        client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information", headers, params, object: JsonHttpResponseHandler() {
+        client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information",
+            headers, params, object: JsonHttpResponseHandler() {
 
             override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON?) {
 
@@ -80,19 +82,18 @@ class ResultsActivity : AppCompatActivity() {
                 Log.d("success-extIngredArrObj", "$extIngredArrObj")
 
                 // extract ingredients and placed into array as strings
-                var extIngredArray: ArrayList<String?> = ArrayList()
+                var extIngredArray: String? = ""
                 for (i in 0 until (extIngredArrObj?.length() ?: 0)) {
                     val extIngredObj: JSONObject? = extIngredArrObj?.getJSONObject(i)
-                    extIngredArray.add(extIngredObj?.getString("original"))
+                    extIngredArray += (i + 1).toString() + extIngredObj?.getString("original") + ".\n"
                 }
                 Log.d("success-extIngredArray", "$extIngredArray")
 
                 // carry ingredient and recipe info to next activity
                 val intent = Intent(this@ResultsActivity, RecipeInfoActivity::class.java)
-                intent.putExtra("instructions", instructions)
+                intent.putExtra("instructions", instructions?.replace(".", ".\n"))
                 intent.putExtra("extendedIngredients", extIngredArray)
                 startActivity(intent)
-
             }
             override fun onFailure(statusCode: Int, headers: Headers?, response: String?, throwable: Throwable?) {
                 Log.e("API Error", "Failed to fetch data: $response")

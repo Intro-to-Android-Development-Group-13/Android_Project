@@ -11,9 +11,13 @@ class RecipeInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_info)
 
-        var info: TextView = findViewById(R.id.recipeInfo)
-        val intentInfo = intent.getStringExtra("instructions")
-        info.text = intentInfo
+        // add recipe info to textview
+        var recipeInfo: TextView = findViewById(R.id.recipeInfo)
+        recipeInfo.text = intent.getStringExtra("instructions")
+
+        // add ingredients info to textview
+        var ingredientsInfo: TextView = findViewById(R.id.ingredientsInfo)
+        ingredientsInfo.text = intent.getStringExtra("extendedIngredients")
 
         val backButton: Button = findViewById(R.id.infoBackBtn)
 

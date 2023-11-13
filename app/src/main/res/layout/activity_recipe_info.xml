@@ -35,7 +35,7 @@
         android:id="@+id/recipeHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recipe"
+        android:text="Instructions"
         android:textStyle="bold"
         android:textSize="28dp"
         app:layout_constraintStart_toStartOf="parent"
