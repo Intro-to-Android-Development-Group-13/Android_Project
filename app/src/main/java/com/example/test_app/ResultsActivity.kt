@@ -59,6 +59,13 @@ class ResultsActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * getRecipeInfo sends an api call to rapid api to retrieve info on the recipe
+     * instructions and additional ingredients. It carries the info to the next
+     * state and brings the user to that page once initiated.
+     * :param: recipeId: String - primary key for recipe in rapid api
+     * :return: None
+     */
     private fun getRecipeInfo(recipeId: String?) {
         val client = AsyncHttpClient()
         val params = RequestParams()
@@ -85,7 +92,7 @@ class ResultsActivity : AppCompatActivity() {
                 var extIngredArray: String? = ""
                 for (i in 0 until (extIngredArrObj?.length() ?: 0)) {
                     val extIngredObj: JSONObject? = extIngredArrObj?.getJSONObject(i)
-                    extIngredArray += (i + 1).toString() + extIngredObj?.getString("original") + ".\n"
+                    extIngredArray += (i + 1).toString() + ") " + extIngredObj?.getString("original") + ".\n"
                 }
                 Log.d("success-extIngredArray", "$extIngredArray")
 
