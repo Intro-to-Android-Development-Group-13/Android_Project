@@ -42,24 +42,30 @@ class ResultsActivity : AppCompatActivity() {
         val params = RequestParams()
         val id: Int = recipeId?.toIntOrNull()?: 0
         val headers = RequestHeaders()
+
         headers.put("X-RapidAPI-Key", "72e3afa377msh7ef35d064c63a73p1dc7b9jsn2241f09376c0")
         headers.put("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
+
         client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information",
             headers, params, object: JsonHttpResponseHandler() {
                 override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON?) {
                     // get instructions
                     val instructions = json?.jsonObject?.getString("instructions")
                     Log.d("success-instructions","$instructions")
+
+                    // get ingredients
                     val extIngredArrObj: JSONArray? = json?.jsonObject?.getJSONArray("extendedIngredients")
                     Log.d("success-extIngredArrObj", "$extIngredArrObj")
                     var extIngredArray: String? = ""
                     for (i in 0 until (extIngredArrObj?.length() ?: 0)) {
                         val extIngredObj: JSONObject? = extIngredArrObj?.getJSONObject(i)
-                        extIngredArray += (i + 1).toString() + ") " + extIngredObj?.getString("original") + ".\n"
+                        extIngredArray += extIngredObj?.getString("original") + ".\n\n"
                     }
                     Log.d("success-extIngredArray", "$extIngredArray")
+
+                    // carry ingredients and instructions to next RecipeInfoActivity
                     val intent = Intent(this@ResultsActivity, RecipeInfoActivity::class.java)
-                    intent.putExtra("instructions", instructions?.replace(".", ".\n"))
+                    intent.putExtra("instructions", (instructions?.replace(".", ".\n\n"))?.substringAfter("Instructions"))
                     intent.putExtra("extendedIngredients", extIngredArray)
                     startActivity(intent)
                 }
