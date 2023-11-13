@@ -13,6 +13,8 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
+import org.json.JSONArray
+import org.json.JSONObject
 
 class ResultsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,12 +70,27 @@ class ResultsActivity : AppCompatActivity() {
         client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${id}/information", headers, params, object: JsonHttpResponseHandler() {
 
             override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON?) {
+
+                // get recipe instructions
                 val instructions = json?.jsonObject?.getString("instructions")
+                Log.d("success-instructions","$instructions")
 
-                Log.d("success-Info","$instructions")
+                // get additional ingredients array of object
+                val extIngredArrObj: JSONArray? = json?.jsonObject?.getJSONArray("extendedIngredients")
+                Log.d("success-extIngredArrObj", "$extIngredArrObj")
 
+                // extract ingredients and placed into array as strings
+                var extIngredArray: ArrayList<String?> = ArrayList()
+                for (i in 0 until (extIngredArrObj?.length() ?: 0)) {
+                    val extIngredObj: JSONObject? = extIngredArrObj?.getJSONObject(i)
+                    extIngredArray.add(extIngredObj?.getString("original"))
+                }
+                Log.d("success-extIngredArray", "$extIngredArray")
+
+                // carry ingredient and recipe info to next activity
                 val intent = Intent(this@ResultsActivity, RecipeInfoActivity::class.java)
                 intent.putExtra("instructions", instructions)
+                intent.putExtra("extendedIngredients", extIngredArray)
                 startActivity(intent)
 
             }

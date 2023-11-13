@@ -6,18 +6,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFE0E0"
-    tools:context=".RecipeInfoActivity"
->
+    tools:context=".RecipeInfoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientsHeader"
+        android:text="Ingredients"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ingredientsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="placeholder info"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/recipeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsInfo"/>
+
 
     <TextView
         android:id="@+id/recipeInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Info"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="placeholder info"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/recipeHeader"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/infoBackBtn"
