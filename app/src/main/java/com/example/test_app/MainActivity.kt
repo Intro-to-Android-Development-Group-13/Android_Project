@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
         // When user submits, api call to rapid api will commence
         val submit: Button = findViewById(R.id.button2)
         submit.setOnClickListener {
-            Log.d("success-ingredients", "$ingredients")
             if (ingredients.isEmpty()) {
                 ingredients = "apple,flour,sugar,"
             }
@@ -44,10 +43,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getRecipes(ingredients: String) {
+        Log.d("success-ingredients", "$ingredients")
         val client = AsyncHttpClient()
         val params = RequestParams()
         params.put("ingredients", ingredients)
-        params.put("number", "5")
+        params.put("number", "10")
         params.put("rank", "2")
 
         val headers = RequestHeaders()
