@@ -63,7 +63,7 @@
 
     <Button
         android:id="@+id/infoBackBtn"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Back"
         android:backgroundTint="#9D9B64"

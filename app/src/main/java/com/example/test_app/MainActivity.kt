@@ -18,33 +18,28 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     private lateinit var ingredientsEditText: EditText
     private lateinit var ingredientsListTextView: TextView
+    private var ingredients: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var userIngredients: String = "apple,cinnamon,sugar"
-
         ingredientsEditText = findViewById(R.id.ingredients)
         ingredientsListTextView = findViewById(R.id.ingredientsList)
 
-        /**
-         * Mina - userIngredients will be what you add to. The above is just a placeholder
-         * for mine and siyuan's testing. You'll want to create an event listener similar
-         * to below such that ingredients gets added to the square box in the middle of
-         * activity_main layout and concatenated with userIngredients (make sure to start
-         * with an empty string for userIngredients! lol)
-         * for reference userIngredients should be separated by a comma (no space).
-         */
-
-        // When user submits, api call to rapidapi will commence
-        val submit: Button = findViewById(R.id.button2)
-        submit.setOnClickListener {
-            getRecipes(userIngredients)
-        }
-
+        // add ingredients
         val addButton: Button = findViewById(R.id.addButton)
         addButton.setOnClickListener {
-            addIngredientToList()
+            ingredients += addIngredientToList()
+        }
+
+        // When user submits, api call to rapid api will commence
+        val submit: Button = findViewById(R.id.button2)
+        submit.setOnClickListener {
+            Log.d("success-ingredients", "$ingredients")
+            if (ingredients.isEmpty()) {
+                ingredients = "apple,flour,sugar,"
+            }
+            getRecipes(ingredients.dropLast(1))
         }
     }
 
@@ -52,19 +47,21 @@ class MainActivity : AppCompatActivity() {
         val client = AsyncHttpClient()
         val params = RequestParams()
         params.put("ingredients", ingredients)
-        params.put("number", "10")
-        params.put("rank", "10")
+        params.put("number", "5")
+        params.put("rank", "2")
 
         val headers = RequestHeaders()
         headers.put("X-RapidAPI-Key", "72e3afa377msh7ef35d064c63a73p1dc7b9jsn2241f09376c0")
         headers.put("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
 
-        client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch", headers, params, object : JsonHttpResponseHandler() {
+        client.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients", headers, params, object : JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON) {
                 Log.d("success", "$json")
 
                 // fetch json results - relevant keys: id, title and image
-                val resultsArray: JSONArray = json.jsonObject.getJSONArray("results")
+                val resultsArray: JSONArray = json.jsonArray
+                Log.d("success", "$resultsArray")
+
                 val recipesArray: ArrayList<HashMap<String, String>> = ArrayList()
 
                 // recipesArray format: [{image=https://spoonacular.com/recipeImages/592479-312x231.jpg, id=592479, title=Kale and Quinoa Salad with Black Beans}, ...]
@@ -91,11 +88,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun addIngredientToList() {
-        val ingredient = ingredientsEditText.text.toString().trim()
+    private fun addIngredientToList(): String{
+        val ingredient: String = ingredientsEditText.text.toString().trim()
+        var ingredients = ""
 
         if (ingredient.isNotEmpty()) {
             // Append the ingredient to the TextView
+            ingredients += ingredient + ","
             val currentText = ingredientsListTextView.text.toString()
             val newText = if (currentText.isEmpty()) {
                 "- $ingredient"
@@ -108,6 +107,7 @@ class MainActivity : AppCompatActivity() {
             // Clear the EditText for the next input
             ingredientsEditText.text.clear()
         }
+        return ingredients
     }
 
 }
