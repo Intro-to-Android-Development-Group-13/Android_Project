@@ -5,19 +5,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9D9B64"
-    tools:context=".RecipeInfoActivity"
->
+    android:background="#FFE0E0"
+    tools:context=".RecipeInfoActivity">
 
-    <TextView
-        android:id="@+id/recipeInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toTopOf="@id/infoBackBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- Added padding for the LinearLayout -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredientsHeader"
+                android:text="Ingredients"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/ingredientsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="placeholder info"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/recipeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/recipeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="placeholder info"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="italic"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <Button
         android:id="@+id/infoBackBtn"
@@ -28,5 +70,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
