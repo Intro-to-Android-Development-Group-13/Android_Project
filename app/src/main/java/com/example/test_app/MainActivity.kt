@@ -11,15 +11,21 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 import org.json.*
 import android.content.Intent
-
+import android.widget.EditText
+import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var ingredientsEditText: EditText
+    private lateinit var ingredientsListTextView: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         var userIngredients: String = "apple,cinnamon,sugar"
+
+        ingredientsEditText = findViewById(R.id.ingredients)
+        ingredientsListTextView = findViewById(R.id.ingredientsList)
 
         /**
          * Mina - userIngredients will be what you add to. The above is just a placeholder
@@ -34,6 +40,11 @@ class MainActivity : AppCompatActivity() {
         val submit: Button = findViewById(R.id.button2)
         submit.setOnClickListener {
             getRecipes(userIngredients)
+        }
+
+        val addButton: Button = findViewById(R.id.addButton)
+        addButton.setOnClickListener {
+            addIngredientToList()
         }
     }
 
@@ -78,6 +89,25 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+    }
+
+    private fun addIngredientToList() {
+        val ingredient = ingredientsEditText.text.toString().trim()
+
+        if (ingredient.isNotEmpty()) {
+            // Append the ingredient to the TextView
+            val currentText = ingredientsListTextView.text.toString()
+            val newText = if (currentText.isEmpty()) {
+                "- $ingredient"
+            } else {
+                "$currentText\n- $ingredient"
+            }
+
+            ingredientsListTextView.text = newText
+
+            // Clear the EditText for the next input
+            ingredientsEditText.text.clear()
+        }
     }
 
 }
