@@ -26,7 +26,8 @@ The following REQUIRED features are completed:
 - [X] Processed recipe items and generated the image, their corresponding title and provided ID capture 
 for recipe api call. Implemented recycler view and adapter for users to scroll screen vertically- Siyuan Zhai 
 - [X] Implemented API calls for recipe list based off ingredients and recipe information based off user selection. 
-Implemented response parsing, screen transitions and generated recipe and ingredient data upon user selecting a recipe.
+Implemented response parsing, screen transitions and generated recipe and ingredient data upon user 
+selecting a recipe. - Alfonso Vieyra
 
 <img src='schedule.png' title='Schedule' width='400' height="800" alt='Project Schedule' />
 
