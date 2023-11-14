@@ -28,7 +28,7 @@ for recipe api call. Implemented recycler view and adapter for users to scroll s
 - [X] Implemented API calls for recipe list based off ingredients and recipe information based off user selection. 
 Implemented response parsing, screen transitions and generated recipe and ingredient data upon user selecting a recipe.
 
-<img src='schedule.png' title='Schedule' width='' alt='Project Schedule' />
+<img src='schedule.png' title='Schedule' width='400' height="800" alt='Project Schedule' />
 
 Image created via **[Figma](https://www.figma.com/)**
 
@@ -51,7 +51,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='prepPilot-demo.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='prepPilot-demo.gif' title='Video Demo' width='400' height="800" alt='Video Demo' />
 
 VIDEO created with **[ScreenToGIF](https://www.screentogif.com/)**
 
