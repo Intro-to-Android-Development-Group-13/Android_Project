@@ -77,6 +77,12 @@ process, or what you learned this unit!
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
 
+<img src='buildProc.png' title='Outline' width='400' height="800" alt='Project Schedule' />
+
+<img src='schedule.png' title='Schedule' width='400' height="800" alt='Project Schedule' />
+
+<img src='prepPilot-demo.gif' title='Video Demo' width='400' height="800" alt='Video Demo' />
+
 ## License
 
 Copyright **2023** **Alfonso Vieyra, Tyler Thiem, Siyuan Zhai, Donovan Chen, Mina Yoon**
