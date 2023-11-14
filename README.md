@@ -1,17 +1,19 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Milestone 2 - **Team/App Name**
+# AND101 Milestone 2 - **Team 13/PrepPilot**
 
 Submitted by:
-- **Team Member 1 Name Here**
-- **Team Member 2 Name Here**
-- **etc**
+- **Team Member 1 Alfonso Vieyra**
+- **Team Member 2 Siyuan Zhai**
+- **Team Member 3 Tyler Thiem**
+- **Team Member 4 Mina Yoon**
+- **Team Member 5 Donovan Chen**
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Summary
 
-This document provides a summary of our project building process for our app, **App Name Here**
+This document provides a summary of our project building process for our app, **PrepPilot**
 
 ## Milestone Requirements
 
@@ -19,13 +21,16 @@ This document provides a summary of our project building process for our app, **
 
 The following REQUIRED features are completed:
 
-- [X] Added front page layout and front end template for first activity screen- Tyler Thiem (1 day)
-- [X] First activity screen, generated ingredients onto screen upon user input - Mina Yoon (1 day)
+- [X] Added front page layout and front end template for first activity screen- Tyler Thiem 
+- [X] First activity screen, generated ingredients onto screen upon user input - Mina Yoon 
 - [X] Processed recipe items and generated the image, their corresponding title and provided ID capture 
-for recipe api call. Implemented recycler view and adapter for users to scroll screen vertically- Siyuan Zhai ( 1 day)
+for recipe api call. Implemented recycler view and adapter for users to scroll screen vertically- Siyuan Zhai 
 - [X] Implemented API calls for recipe list based off ingredients and recipe information based off user selection. 
 Implemented response parsing, screen transitions and generated recipe and ingredient data upon user selecting a recipe.
-- [ ] Establish a goal time for completing each feature
+
+<img src='schedule.png' title='Schedule' width='' alt='Project Schedule' />
+
+Image created via **[Figma](https://www.figma.com/)**
 
 The following REQUIRED files are included:
 
