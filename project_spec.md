@@ -37,16 +37,11 @@ Required Features:
 - Users can select any recipe of their choice
 - The recipe's themselves will have all the instructions to make the meal
 
-Stretch Features:
-
-- Users can select a category of food
-- Information displays additional nutritional information
-
 ### 2. Chosen API(s)
 
 - Spoonacular API:
-  - Recipes 
-  - Nutritional Information
+  - Recipes List
+  - Recipe Information
 
 ### 3. User Interaction
 
@@ -59,7 +54,7 @@ Required Feature
   - => **A list of recipes or food items**
 
 - **User will click on any of the options on the list**
-  - => **Will display recipe steps and additionaly nutritional info**
+  - => **Will display recipe steps and additional ingredients info**
 
 ## Wireframes
 
