@@ -1,20 +1,17 @@
-# Android_Project
-# AND101 Milestone 1 - **Team/App Name**
+<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
+
+# AND101 Milestone 2 - **Team/App Name**
 
 Submitted by:
-- **Alfonso Vieyra**
-- **Tyler Thiem**
-- **Siyuan Zhai**
-- **Donovan Chen**
-- **Mina Yoon**
+- **Team Member 1 Name Here**
+- **Team Member 2 Name Here**
+- **etc**
 
-Time spent: **3** hours spent in total
+Time spent: **X** hours spent in total
 
 ## Summary
 
-This document provides an overview, project spec, and wireframes for our team's capstone project: An app that will give potential recipes for the user based on the ingredients that they have given. 
-
-If we had to describe this milestone in three (3) emojis, they would be: 😀 😃 😄
+This document provides a summary of our project building process for our app, **App Name Here**
 
 ## Milestone Requirements
 
@@ -22,28 +19,36 @@ If we had to describe this milestone in three (3) emojis, they would be: 😀 �
 
 The following REQUIRED features are completed:
 
-- [x] Creation of GitHub Organization and Group Project Repo
-- [x] Updated Course Portal group info with Group Name and App Description
+- [X] Added front page layout and front end template for first activity screen- Tyler Thiem (1 day)
+- [X] First activity screen, generated ingredients onto screen upon user input - Mina Yoon (1 day)
+- [X] Processed recipe items and generated the image, their corresponding title and provided ID capture 
+for recipe api call. Implemented recycler view and adapter for users to scroll screen vertically- Siyuan Zhai ( 1 day)
+- [X] Implemented API calls for recipe list based off ingredients and recipe information based off user selection. 
+Implemented response parsing, screen transitions and generated recipe and ingredient data upon user selecting a recipe.
+- [ ] Establish a goal time for completing each feature
 
 The following REQUIRED files are included:
 
-- [x] Included 📄 `brainstorming.md`, which contains:
-  - [x] Our initial brainstorming ideas (6+ ideas)
-  - [x] 5-category evaluation of our top 3 ideas
-  - [x] Final app idea chosen
-- [x] Included 📄 `project_spec.md`, which contains:
-  - [x] App Overview: Description and evaluation
-  - [x] App Spec: User features, Chosen API(s), User Interactions
-  - [x] Wireframe image(s)
+- [ ] Updated 📄 `project_spec.md`, which contains:
+  - [X] App Overview (Milestone 1)
+  - [X] App Spec (Milestone 1)
+  - [X] Checked off 2+ completed features
+  - [ ] 2+ Videos/GIFs of build progress
 
-The following BONUS features are implemented:
-
-- [x] Added digital wireframe/mockup image(s)
-- [x] Added a Video/GIF of an interactive prototype
+- [ ] Our 🎥 Demo Video
+  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve your submission!
+- [X] Added a nested scroll for users to scroll ingredients and instructions in one page.
+
+## 🎥 Demo Video
+
+Here's a video that demos all of the app's implemented features:
+
+<img src='prepPilot-demo.gif' title='Video Demo' width='' alt='Video Demo' />
+
+VIDEO created with **[ScreenToGIF](https://www.screentogif.com/)**
 
 ## Notes
 
